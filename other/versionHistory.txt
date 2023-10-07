@@ -1,0 +1,5 @@
+V0.0.1
+--> Project Structure, Global Variables and  basic output
+
+V0.0.2
+--> Basic Functions and Output 2
