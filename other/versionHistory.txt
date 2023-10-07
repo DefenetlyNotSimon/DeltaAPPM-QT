@@ -1,5 +1,9 @@
-V0.0.1
+V0.0.0.1
 --> Project Structure, Global Variables and  basic output
 
-V0.0.2
+V0.0.0.2
 --> Basic Functions and Output 2
+
+V0.0.1
+--> Migration to qt.io
+--> Basic Setup of Structure and files
