@@ -37,4 +37,5 @@ DISTFILES += \
     README.md \
     $$PWD/other/codingStyleConventions.txt \
     $$PWD/other/deltaPublicImage.txt \
-    $$PWD/other/versionHistory.txt
+    $$PWD/other/versionHistory.txt \
+    other/colors

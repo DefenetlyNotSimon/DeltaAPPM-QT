@@ -5,6 +5,5 @@
 #include <string>
 
     extern int iGlobalInt;
-    extern const std::string sSkip5;
 
 #endif
