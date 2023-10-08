@@ -10,21 +10,27 @@ CONFIG += c++17
 
 SOURCES += \
     $$PWD/source/main.cpp \
-    $$PWD/interface/mainwindow.cpp \
+    $$PWD/source/launcherWindow.cpp \
     $$PWD/functions/functions.cpp \
-    $$PWD/globalVariables/globalVariables.cpp
+    $$PWD/globalVariables/globalVariables.cpp \
+    $$PWD/source/createprojectdialog.cpp \
+    $$PWD/classes/objectInitializer.cpp \
+
 
 HEADERS += \
-    $$PWD/headers/mainwindow.hpp \
+    $$PWD/headers/launcherWindow.hpp \
     $$PWD/headers/functions.hpp \
-    $$PWD/headers/globalVariables.hpp
+    $$PWD/headers/globalVariables.hpp \
+    $$PWD/headers/createprojectdialog.hpp \
+    $$PWD/headers/objectInitializer.hpp
 
 
 FORMS += \
-    $$PWD/forms/mainwindow.ui
+    $$PWD/interface/launcherWindow.ui \
+    $$PWD/interface/createprojectdialog.ui
 
 TRANSLATIONS += \
-    $$PWD/translations/DeltaAPPM-QT_de_DE.ts
+    $$PWD/resources/translations/DeltaAPPM-QT_de_DE.ts
 CONFIG += lrelease
 CONFIG += embed_translations
 
@@ -38,4 +44,13 @@ DISTFILES += \
     $$PWD/other/codingStyleConventions.txt \
     $$PWD/other/deltaPublicImage.txt \
     $$PWD/other/versionHistory.txt \
-    other/colors
+    $$PWD/other/colors \
+    $$PWD/resources/deltaStyle.qss \
+    $$PWD/resources/stylesheets/deltaStyleSheet.qss \
+    $$PWD/classes/deltaStyleSheet.qss \
+    $$PWD/classes/test.txt \
+    source/test.txt \
+    test.txt
+
+RESOURCES += \
+    $$PWD/resources/deltaResources.qrc

@@ -1,11 +1,13 @@
-#include "../headers/mainwindow.hpp"
+#include "../headers/launcherWindow.hpp"
 #include "../headers/functions.hpp"
 #include "../headers/globalVariables.hpp"
+#include "headers/objectInitializer.hpp"
+
+
 
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
-#include <QDebug>
 
 int main(int argc, char *argv[])
 {
@@ -24,9 +26,33 @@ int main(int argc, char *argv[])
 
     qDebug() << "Debug Message!" << iGlobalInt; //! Debug delete
 
-    //MainWindow Init
-    MainWindow mwWindow;
-    mwWindow.showInit();
+
+
+    //VAR
+
+    //launcherWindow Init
+    LauncherWindow launcherWindow;
+    launcherWindow.showInit();
+
+    //launcherWindow Buttons Init
+    launcherWindow.initMWButton();
+
+
+    //DEBUG FILESHIT
+    QFile file2(QCoreApplication::applicationDirPath() + "test.txt");
+    QFile File("test.txt");
+    if (file2.exists()){
+        qDebug() << "file exists2";
+    } else {qDebug() << "file doesnt exist2";}
+    file2.open(QFile::ReadOnly);
+    QString FileString = QLatin1String(file2.readAll());
+    qDebug() << FileString;
+
+
+
+
+
+
 
     return appApplication.exec();
 }

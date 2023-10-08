@@ -9,16 +9,23 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
+class LauncherWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    LauncherWindow(QWidget *parent = nullptr);
+    ~LauncherWindow();
     int showInit(QString showInitOutput = "Window initialized");
+    void initMWButton();
+    
+private slots:
+    void on_closeButton_released();
+
+    void on_newPrjButton_released();
 
 private:
     Ui::MainWindow *ui;
+    
 };
 #endif // MAINWINDOW_H

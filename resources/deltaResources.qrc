@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/stylesheets"/>
+    <qresource prefix="/translations">
+        <file>translations/DeltaAPPM-QT_de_DE.ts</file>
+    </qresource>
+</RCC>
